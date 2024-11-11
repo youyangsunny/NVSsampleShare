@@ -28,27 +28,29 @@
             height: 60px;
             width: 100px;
         }
-        .diagonal-header:before {
+                .diagonal-header:before {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, transparent 50%, #ddd 50%);
+            background: linear-gradient(to bottom right, transparent 50%, #ddd 50%);
             z-index: 1;
         }
-        .diagonal-header span {
-            position: absolute;
-            z-index: 2;
-        }
         .condition {
-            top: 5px;
+            position: absolute;
+            bottom: 5px;
             left: 5px;
+            z-index: 2;
+            font-weight: bold;
         }
         .emotion {
-            bottom: 5px;
+            position: absolute;
+            top: 5px;
             right: 5px;
+            z-index: 2;
+            font-weight: bold;
         }
         .audio-label {
             font-weight: bold;
